@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MorseCoder.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="black" Padding="24" CornerRadius="0">
+            <Label Text="Morse Coder" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Create your morse code by pressing the buttons" FontSize="20"/>
+        <Button x:Name="Dot" Text="." FontSize="36" Clicked="Dot_Clicked"/>
+        <Button x:Name="Dash" Text="-" FontSize="36" Clicked="Dash_Clicked"/>
+        <Button x:Name="Space" Text=" " Clicked="Space_Clicked" FontSize="36"/>
+        <Label x:Name="output_code" />
+        <Label x:Name="output" />
+    </StackLayout>
+
+</ContentPage>
